@@ -1,4 +1,8 @@
 * {
-    border: 1px solid black;
+    outline: 1px solid black;
 
+}
+
+p {
+    background-color: #0B64E3;
 }
