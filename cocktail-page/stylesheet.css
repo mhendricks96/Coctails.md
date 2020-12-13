@@ -1,3 +1,7 @@
 * {
-outline: 1px black solid;
+    outline: 1px black solid;
+}
+
+p {
+    background-color: #0DAFFD;
 }
