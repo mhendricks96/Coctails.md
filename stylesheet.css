@@ -1,0 +1,20 @@
+* {
+    outline: 1px black solid;
+}
+
+p {
+    background-color: #0DAFFD;
+}
+h2 {
+    background-color:#0025FA;
+}
+h1 {
+    background-color:#6A0DFD;
+    color: white;
+}
+nav {
+    background-color:#0B64E3;
+}
+body {
+    background-color: #3d7d9c;
+}
