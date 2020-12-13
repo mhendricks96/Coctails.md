@@ -2,7 +2,7 @@ console.log("Hello, World");
 
 var Whiskey;
 
-Whiskey = "Real Drink!";
+Whiskey = "The only real drink?";
 
 console.log(Whiskey);
 
