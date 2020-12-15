@@ -9,26 +9,46 @@ console.log(Whiskey);
 var firstQuestion;
 var alertMessage;
 var firstResponse;
-var overDrinkingAge
+var secondResponse;
 
 firstQuestion = "what is your favorite drink?";
 
 
 
 firstResponse = prompt (firstQuestion);
-console.log(firstResponse);
 
 if (firstResponse === "old fashion") { 
-    alertMessage = "Excellent choice!"
+    alertMessage = "Excellent Choice!"
  } else {
-    alertMessage = "Gross! grow up and drink an old fashion";
+    alertMessage = "Gross! Grow up and drink an old fashion";
 }
 
-overDrinkingAge = prompt ("how old are you?");
+alert(alertMessage);
 
-if (overDrinkingAge > 20) {
-    console.log ("old enough to advertise")
+console.log(element);
+
+secondResponse = prompt ("Do you enjoy drinking");
+
+if (secondResponse === "yes") {
+    alertMessage = "Welcome in!"
+ }   
+    else {
+    alertMessage = "Get out of here!";
+    }
+
+    var element = document.getElementById("response-output");
+
+    element.innerText = alertMessage;
+
+thirdResponse = prompt ("do you like martini's?");
+
+if (secondResponse === "yes") {
+    alertMessage = "Here's the nasty drink you like";
 }
     else {
-    console.log ("get them outta here!");
+    alertMessage = "Thank you for being honest. These are gross";
     }
+
+    var element = document.getElementById("martini-output");
+
+    element.innerText = alertMessage;
