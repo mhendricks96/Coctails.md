@@ -6,15 +6,16 @@ Whiskey = "The only real drink?";
 
 console.log(Whiskey);
 
-var age = prompt ("What is your favorite drink");
+var firstQuestion;
 
-console.log(age);
+firstQuestion = "what is your favorite drink?";
+
 
 var overDrinkingAge = prompt ("how old are you?");
 
-if (Response>20) {
-    console.log ("Excellent!")
+if (Response > 20) {
+    console.log ("old enough to advertise")
 }
     else {
-        console.log ("Get Out!")
+    console.log ("get them outta here!");
     }
