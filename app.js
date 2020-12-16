@@ -8,18 +8,19 @@ console.log(Whiskey);
 
 var firstQuestion;
 var alertMessage;
-var firstResponse;
+var favoriteDrink;
 var secondResponse;
+var color;
 
 firstQuestion = "what is your favorite drink?";
 
 
 
-firstResponse = prompt (firstQuestion);
+favoriteDrink = prompt (firstQuestion);
 
-if (firstResponse === "old fashion") { 
+if (favoriteDrink === "old fashion") { 
     alertMessage = "Excellent Choice!"
- } else if (firstResponse === "manhattan") {
+ } else if (favoriteDrink === "manhattan") {
     alertMessage = "that is a lovely choice"
  }
  else {
@@ -28,7 +29,6 @@ if (firstResponse === "old fashion") {
 
 alert(alertMessage);
 
-console.log(element);
 
 secondResponse = prompt ("Do you enjoy drinking");
 
@@ -39,19 +39,14 @@ if (secondResponse === "yes") {
     alertMessage = "Get out of here!";
     }
 
-    var element = document.getElementById("response-output");
-
-    element.innerText = alertMessage;
-
 thirdResponse = prompt ("do you like martini's?");
 
 if (secondResponse === "yes") {
-    alertMessage = "Here's the nasty drink you like";
+    color = "yellow";
 }
     else {
-    alertMessage = "Thank you for being honest. These are gross";
+    color = "black";
     }
+document.getElementById("martini-output").style.background= color;
 
-    var element = document.getElementById("martini-output");
-
-    element.innerText = alertMessage;
+    
