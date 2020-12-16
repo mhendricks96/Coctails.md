@@ -19,7 +19,7 @@ firstQuestion = "what is your favorite drink?";
 favoriteDrink = prompt (firstQuestion);
 
 if (favoriteDrink === "old fashion") { 
-    color = "browm"
+    color = "browm";
  } else if (favoriteDrink === "manhattan") {
     color = "grey"
  }
@@ -39,15 +39,20 @@ if (secondResponse === "yes") {
     alertMessage = "Get out of here!";
     }
 
-var ageVerification = "how old are you";
+alert(alertMessage);
+
+    var ageVerification = "how old are you";
 var visitorAge = prompt (ageVerification);
 
 if (visitorAge >= 21) {
     color = "yellow";
+} else if (visitorAge < 2) {
+    color = "pink"
 }
     else {
     color = "black";
     }
+
 document.getElementById("age-output").style.background= color;
 
     
