@@ -19,15 +19,15 @@ firstQuestion = "what is your favorite drink?";
 favoriteDrink = prompt (firstQuestion);
 
 if (favoriteDrink === "old fashion") { 
-    alertMessage = "Excellent Choice!"
+    color = "browm"
  } else if (favoriteDrink === "manhattan") {
-    alertMessage = "that is a lovely choice"
+    color = "grey"
  }
  else {
-    alertMessage = "Gross! Grow up and drink an old fashion";
+    color = "black";
 }
 
-alert(alertMessage);
+document.getElementById("drink-output").style.background= color;
 
 
 secondResponse = prompt ("Do you enjoy drinking");
@@ -39,14 +39,15 @@ if (secondResponse === "yes") {
     alertMessage = "Get out of here!";
     }
 
-thirdResponse = prompt ("do you like martini's?");
+var ageVerification = "how old are you";
+var visitorAge = prompt (ageVerification);
 
-if (secondResponse === "yes") {
+if (visitorAge >= 21) {
     color = "yellow";
 }
     else {
     color = "black";
     }
-document.getElementById("martini-output").style.background= color;
+document.getElementById("age-output").style.background= color;
 
     
