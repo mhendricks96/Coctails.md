@@ -65,19 +65,12 @@ if (visitorAge >= 21) {
     else {
     color = "black";
     }
-
+console.log(visitorAge);
 document.getElementById("age-output").style.background= color;
 }
 
 getUserAge();
 
 
-
-
-function sayHello() {
-    document.write("Hello!");
-}
-
-sayHello();
 
     
