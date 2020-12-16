@@ -19,7 +19,10 @@ firstResponse = prompt (firstQuestion);
 
 if (firstResponse === "old fashion") { 
     alertMessage = "Excellent Choice!"
- } else {
+ } else if (firstResponse === "manhattan") {
+    alertMessage = "that is a lovely choice"
+ }
+ else {
     alertMessage = "Gross! Grow up and drink an old fashion";
 }
 
