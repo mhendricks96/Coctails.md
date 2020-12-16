@@ -6,29 +6,37 @@ Whiskey = "The only real drink?";
 
 console.log(Whiskey);
 
-var firstQuestion;
 var alertMessage;
-var favoriteDrink;
 var secondResponse;
 var color;
 
-firstQuestion = "what is your favorite drink?";
 
 
+var firstQuestion;
+firstQuestion = "What drink do you prefer? old fashion, martini, or gimlet?";
 
-favoriteDrink = prompt (firstQuestion);
+var favoriteDrink = prompt (firstQuestion);
+console.log(favoriteDrink);
 
-if (favoriteDrink === "old fashion") { 
-    color = "browm";
- } else if (favoriteDrink === "manhattan") {
-    color = "grey"
- }
- else {
-    color = "black";
+function setColorBasedOnUserInput(drink) {
+
+    if (drink === "gimlet") { 
+        color = "yellow";
+    } else if (drink === "martini") {
+        color = "pink"
+    }
+     else {
+        color = "black";
+    }
+
 }
+document.getElementById("color-output").style.background= color;
 
-document.getElementById("drink-output").style.background= color;
+setColorBasedOnUserInput(favoriteDrink);
 
+
+
+function getUserPrompt() {
 
 secondResponse = prompt ("Do you enjoy drinking");
 
@@ -41,18 +49,35 @@ if (secondResponse === "yes") {
 
 alert(alertMessage);
 
-    var ageVerification = "how old are you";
+}
+getUserPrompt();
+
+
+function getUserAge(){
+var ageVerification = "how old are you";
 var visitorAge = prompt (ageVerification);
 
 if (visitorAge >= 21) {
-    color = "yellow";
+    color = "grey";
 } else if (visitorAge < 2) {
-    color = "pink"
+    color = "purple"
 }
     else {
     color = "black";
     }
 
 document.getElementById("age-output").style.background= color;
+}
+
+getUserAge();
+
+
+
+
+function sayHello() {
+    document.write("Hello!");
+}
+
+sayHello();
 
     
