@@ -53,24 +53,17 @@ alert(alertMessage);
 getUserPrompt();
 
 
-function getUserAge(){
+
 var ageVerification = "how old are you";
 var visitorAge = prompt (ageVerification);
 
-if (visitorAge >= 21) {
-    color = "grey";
-} else if (visitorAge < 2) {
-    color = "purple"
-}
-    else {
-    color = "black";
-    }
-console.log(visitorAge);
-document.getElementById("age-output").style.background= color;
-}
 
-getUserAge();
+while (visitorAge < 21) {
+    visitorAge = prompt("sorry, you are too young");
+} 
+
+document.write("Old enough")
 
 
 
-    
+
